@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-03T21:08:09.355370" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Actions" source="C:\QAx\projects\robot-actions">
+<suite id="s1-s1" name="Tests" source="C:\QAx\projects\robot-actions\tests">
+<suite id="s1-s1-s1" name="Login" source="C:\QAx\projects\robot-actions\tests\login.robot">
+<test id="s1-s1-s1-t1" name="Senha incorreta" line="10">
+<kw name="Start Browser" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-03T21:08:09.636494" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\robot-actions\\results\\browser\\traces\\temp\\920801aa-b786-4fc3-9a59-015ccb5781ba"}</msg>
+<msg time="2025-10-03T21:08:09.670675" level="INFO">Starting Browser process C:\Users\Calil\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:59580</msg>
+<msg time="2025-10-03T21:13:29.281039" level="FAIL">Could not connect to the playwright process at 127.0.0.1:59580.</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${IS_HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="FAIL" start="2025-10-03T21:08:09.635204" elapsed="319.658108">Could not connect to the playwright process at 127.0.0.1:59580.</status>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2025-10-03T21:13:29.293873" elapsed="0.000381"/>
+</kw>
+<status status="FAIL" start="2025-10-03T21:08:09.634004" elapsed="319.660493">Could not connect to the playwright process at 127.0.0.1:59580.</status>
+</kw>
+<kw name="Finish Browser" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-10-03T21:18:49.847999" level="FAIL">Could not connect to the playwright process at 127.0.0.1:59580.</msg>
+<arg>fullPage=true</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-10-03T21:13:29.296832" elapsed="320.565957">Could not connect to the playwright process at 127.0.0.1:59580.</status>
+</kw>
+<status status="FAIL" start="2025-10-03T21:13:29.295342" elapsed="320.568477">Could not connect to the playwright process at 127.0.0.1:59580.</status>
+</kw>
+<status status="FAIL" start="2025-10-03T21:08:09.629757" elapsed="640.234799">Setup failed:
+Could not connect to the playwright process at 127.0.0.1:59580.
+
+Also teardown failed:
+Could not connect to the playwright process at 127.0.0.1:59580.</status>
+</test>
+<doc>Suíte de testes de login</doc>
+<status status="FAIL" start="2025-10-03T21:08:09.401062" elapsed="960.276312"/>
+</suite>
+<status status="FAIL" start="2025-10-03T21:08:09.394934" elapsed="1280.294914"/>
+</suite>
+<status status="FAIL" start="2025-10-03T21:08:09.362562" elapsed="1280.333535"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot-Actions" id="s1" pass="0" fail="1" skip="0">Robot-Actions</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Robot-Actions.Tests</stat>
+<stat name="Login" id="s1-s1-s1" pass="0" fail="1" skip="0">Robot-Actions.Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-03T21:24:09.653720" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:59580.</msg>
+<msg time="2025-10-03T21:29:29.682230" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:59580.</msg>
+</errors>
+</robot>
