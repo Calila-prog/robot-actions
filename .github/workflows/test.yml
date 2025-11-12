@@ -21,6 +21,7 @@ jobs:
       uses: actions/setup-node@v4 
       with:
         node-version:  20 
+
     - name: Setup Python 
       uses:  actions/setup-python@v6.0.0
       with:
@@ -33,9 +34,9 @@ jobs:
         pip install -r requirements.txt
 
       -  name:  Browser Init 
-         run: RFbrowser   init
+         run: rfbrowser   init
 
       -  name:  Run E2E Tests
-          run: robot -d ./logs -i smoke tests/
+          run: robot -d ./logs -i smoke tests
         
     
