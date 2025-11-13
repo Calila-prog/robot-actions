@@ -47,7 +47,7 @@ jobs:
       uses: actions/upload-artifact@v4.3.1
       if: always()
       with:
-        name:Chrome Test report
+        name: Chrome Test report
         path: logs 
 
 
